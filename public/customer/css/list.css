@@ -1,0 +1,32 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#pizza_image {
+    filter: brightness(70%);
+    transition: 0.5s;
+}
+
+#pizza_image:hover {
+    filter: brightness(100%);
+}
+
+
+/* no work */
+
+#code-lab-pizza {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* transition: shake 1s infinite; */
+}
+
+@keyframes shake {
+    from {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
